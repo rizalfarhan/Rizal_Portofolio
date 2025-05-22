@@ -53,8 +53,13 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full group relative overflow-hidden">
-                <Link href="/cv.pdf" download className="relative z-10">
-                  <span className="relative z-10">Unduh CV</span>
+                <Link 
+                  href="/cv.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative z-10"
+                >
+                  <span className="relative z-10">Lihat CV</span>
                   <span className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                 </Link>
               </Button>

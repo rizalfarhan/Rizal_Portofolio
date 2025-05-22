@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
 import { GridBackground } from "@/components/grid-background"
 import { FloatingElements } from "@/components/floating-elements"
+import Certifications from "@/components/certifications-section"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <PortfolioSection />
+        <Certifications />
         <ContactSection />
       </main>
       <Footer />
