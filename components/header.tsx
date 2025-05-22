@@ -20,10 +20,11 @@ export function Header() {
   }, [])
 
   const navItems = [
-    { name: "Tentang Saya", href: "#about" },
-    { name: "Keahlian", href: "#skills" },
-    { name: "Portofolio", href: "#portfolio" },
-    { name: "Kontak", href: "#contact" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "Contact", href: "#contact" },
+    { name: "Sertificate", href: "#sertificate" },
   ]
 
   return (

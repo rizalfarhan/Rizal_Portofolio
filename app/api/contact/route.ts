@@ -6,6 +6,9 @@ export async function POST(req: Request) {
     const body = await req.json()
     const { name, email, subject, message } = body
 
+    // Add more detailed error logging
+    console.log('Request body:', { name, email, subject, messageLength: message?.length })
+
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
         { error: "All fields are required." },
@@ -14,17 +17,28 @@ export async function POST(req: Request) {
     }
 
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true, // use SSL
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
     })
 
+    // Verify SMTP connection configuration
+    try {
+      await transporter.verify()
+      console.log('SMTP connection verified')
+    } catch (error) {
+      console.error('SMTP verification failed:', error)
+      throw error
+    }
+
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
-      subject: ` ${subject}`,
+      subject: `${subject}`,
       text: `
         Name: ${name}
 
@@ -33,13 +47,14 @@ export async function POST(req: Request) {
       replyTo: email,
     }
 
-    await transporter.sendMail(mailOptions)
+    const info = await transporter.sendMail(mailOptions)
+    console.log('Email sent:', info.messageId)
 
     return NextResponse.json({ success: true, message: "Email sent successfully" })
   } catch (error) {
     console.error("Email send error:", error)
     return NextResponse.json(
-      { error: "Internal Server Error", detail: error },
+      { error: "Internal Server Error", detail: String(error) },
       { status: 500 }
     )
   }
