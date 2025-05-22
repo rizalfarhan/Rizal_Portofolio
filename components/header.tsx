@@ -19,12 +19,30 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Tambahkan scroll handler
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const element = document.querySelector(href)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
+  // Tambahkan handler untuk scroll to top
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
   const navItems = [
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Portfolio", href: "#portfolio" },
+    { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
-    { name: "Certificate", href: "#certificate" },
   ]
 
   return (
@@ -38,7 +56,11 @@ export function Header() {
       )}
     >
       <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="font-bold text-2xl tracking-tighter relative group">
+        <Link 
+          href="/" 
+          className="font-bold text-2xl tracking-tighter relative group"
+          onClick={handleLogoClick}
+        >
           <span className="relative z-10">RizalFarhan</span>
           <span className="absolute -bottom-0 left-0 w-full h-[6px] bg-primary/20 transform origin-left group-hover:scale-x-100 scale-x-0 transition-transform duration-300 ease-out"></span>
           <motion.span
@@ -48,7 +70,12 @@ export function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item, index) => (
-            <Link key={item.name} href={item.href} className="text-sm font-medium relative group">
+            <Link 
+              key={item.name} 
+              href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
+              className="text-sm font-medium relative group"
+            >
               <span className="relative z-10">{item.name}</span>
               <span className="absolute -bottom-0 left-0 w-full h-[2px] bg-primary transform origin-left group-hover:scale-x-100 scale-x-0 transition-transform duration-300 ease-out"></span>
             </Link>
@@ -73,6 +100,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className="text-lg font-medium p-2 hover:bg-primary/5 rounded-md transition-colors relative group flex items-center"
                 >
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>

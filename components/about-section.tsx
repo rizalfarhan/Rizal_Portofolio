@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import Image from "next/image"
+import { GraduationCap, Lightbulb, UsersRound } from "lucide-react"
 
 export function AboutSection() {
   const ref = useRef(null)
@@ -46,39 +47,45 @@ export function AboutSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 mb-4 text-xs font-medium text-primary border border-primary/20">
-              Tentang Saya
+              About Me
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
               Rizal Farhan Nanda
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Hello! I'm Rizal Farhan Nanda, a UI/UX Designer currently studying at Politeknik Negeri Semarang. I'm
-                passionate about creating intuitive and engaging digital experiences that solve real user problems.
+                I am Rizal Farhan Nanda, an Informatics Engineering student focusing on application development and user interface design (UI/UX). I have worked on various projects ranging from mobile applications, interactive websites, to management systems such as attendance systems and data monitoring dashboards. With the latest technology, I always try to implement creative and functional solutions in each of my works.
               </p>
               <p>
-                My design approach combines aesthetic sensibility with user-centered thinking. I believe that great
-                design should not only look beautiful but also function seamlessly and provide value to users.
-              </p>
-              <p>
-                When I'm not designing, you can find me exploring new design trends, learning new tools, or
-                collaborating with fellow designers and developers to bring ideas to life.
+                In addition to technical development, I also actively collaborate in teams to hone my communication and cooperation skills. I believe that the combination of creativity, logic, and teamwork is the key to producing meaningful digital solutions.
               </p>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mt-8">
               <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
-                <h3 className="text-3xl font-bold text-primary mb-1">5+</h3>
-                <p className="text-xs text-muted-foreground">Years Experience</p>
+                <div className="flex justify-center items-center h-12 mb-2">
+                  <GraduationCap className="w-10 h-10 text-primary" />
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Informatics Engineering Student
+                </p>
               </div>
               <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
-                <h3 className="text-3xl font-bold text-primary mb-1">50+</h3>
-                <p className="text-xs text-muted-foreground">Projects Completed</p>
+                <div className="flex justify-center items-center h-12 mb-2">
+                  <Lightbulb className="w-10 h-10 text-primary" />
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Enthusiastic about ui/ux design
+                </p>
               </div>
               <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
-                <h3 className="text-3xl font-bold text-primary mb-1">30+</h3>
-                <p className="text-xs text-muted-foreground">Happy Clients</p>
+                <div className="flex justify-center items-center h-12 mb-2">
+                  <UsersRound className="w-10 h-10 text-primary" />
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  A passionate Team Collaborator
+                </p>
               </div>
             </div>
           </motion.div>

@@ -18,7 +18,7 @@ export function HeroSection() {
             className="max-w-xl"
           >
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1]">
-              <span className="block">Hi, Saya</span>
+              <span className="block">Hi, I'm</span>
               <span className="relative">
                 Rizal Farhan Nanda
                 <motion.span
@@ -29,9 +29,8 @@ export function HeroSection() {
                 />
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Mahasiswa teknik informatika di Politeknik Negeri Semarang, seorang UI/UX Designer yang berfokus pada desain antarmuka dan pengalaman pengguna.
-              </p>
+            <p className="text-xl text-muted-foreground mb-5 leading-relaxed">
+              Informatics Engineering student of Politeknik Negeri Semarang who is looking for an internship opportunity in the position of UI/UX Designer.              </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button asChild size="lg" className="rounded-full group relative overflow-hidden">
                 <Link href="#portfolio" className="flex items-center gap-2">
@@ -66,7 +65,7 @@ export function HeroSection() {
             </div>
             <div className="inline-flex items-center gap-2 text-muted-foreground">
               <MapPin className="h-4 w-4" />
-              <span>Semarang, Jawa Tengah, Indonesia</span>
+              <span>Semarang, Central Java, Indonesia</span>
             </div>
           </motion.div>
 
@@ -89,7 +88,7 @@ export function HeroSection() {
               </div>
 
               {/* Design elements */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
@@ -102,7 +101,7 @@ export function HeroSection() {
                   <p className="text-xs text-muted-foreground">Years of</p>
                   <p className="font-medium">Design Experience</p>
                 </div>
-              </motion.div>
+              </motion.div> */}
 
               <motion.div
                 initial={{ opacity: 0, y: -20 }}

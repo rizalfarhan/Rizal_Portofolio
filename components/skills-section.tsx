@@ -59,12 +59,11 @@ export function SkillsSection() {
             className="md:w-1/3"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 mb-4 text-xs font-medium text-primary border border-primary/20">
-              Keahlian Saya
+              My Skills
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Alat Desain & Keahlian</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Design Tools & Expertise</h2>
             <p className="text-muted-foreground">
-              Saya menggabungkan alat dan prinsip desain untuk membuat pengalaman digital yang nyaman dilihat, mudah digunakan, dan menjawab kebutuhan pengguna sekaligus mendukung tujuan bisnis.
-            </p>
+              I combine design tools and principles to create digital experiences that are pleasing to the eye, easy to use, and meet user needs while supporting business goals.            </p>
           </motion.div>
 
           <motion.div

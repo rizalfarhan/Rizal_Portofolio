@@ -29,12 +29,12 @@ const Certification = ({ title, issuer, date, pdfUrl }: CertificationProps) => {
           {title}
         </h3>
         <p className="text-sm text-muted-foreground mb-4">
-          Tanggal Sertifikasi: {date}
+          Date Certificate: {date}
         </p>
         <div className="flex justify-end mt-auto">
           <Button asChild size="sm" className="gap-2">
             <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-              Lihat Sertifikat
+              View Certificate
               <ExternalLink className="h-4 w-4" />
             </a>
           </Button>
@@ -53,26 +53,25 @@ export default function Certifications() {
       pdfUrl: "/certificates/CCNA.pdf"
     },
     {
-      title: "Web Development Bootcamp",
-      issuer: "Udemy",
-      date: "2023",
-      pdfUrl: "/certificates/CCNA.pdf"
+      title: "Career Essentials in Generative AI ",
+      issuer: "Microsoft and LinkedIn",
+      date: "2024",
+      pdfUrl: "/certificates/Career Essentials in Generative AI.pdf"
     },
     // Tambahkan lainnya jika perlu
   ]
 
   return (
-    <section className="py-20 md:py-32 relative">
+    <section id="certifications" className="py-20"> {/* Update id */}
       <div className="container relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 mb-4 text-xs font-medium text-primary border border-primary/20">
-              Sertifikasi
+              Certifications
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Certifications</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Certificates</h2>
             <p className="text-muted-foreground max-w-xl">
-              Sertifikasi profesional yang saya raih sebagai bukti keahlian dan komitmen terhadap pembelajaran berkelanjutan.
-            </p>
+              My professional certification is a testament to my expertise and commitment to continuous learning.            </p>
           </div>
         </div>
 
