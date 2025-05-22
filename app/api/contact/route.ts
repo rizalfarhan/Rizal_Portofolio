@@ -6,55 +6,64 @@ export async function POST(req: Request) {
     const body = await req.json()
     const { name, email, subject, message } = body
 
-    // Add more detailed error logging
-    console.log('Request body:', { name, email, subject, messageLength: message?.length })
+    // Debug logging for environment variables
+    console.log('Environment check:', {
+      hasEmailUser: !!process.env.EMAIL_USER,
+      hasEmailPass: !!process.env.EMAIL_PASS
+    })
 
-    if (!name || !email || !subject || !message) {
-      return NextResponse.json(
-        { error: "All fields are required." },
-        { status: 400 }
-      )
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      throw new Error('Email configuration is missing')
     }
 
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
-      secure: true, // use SSL
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
+      tls: {
+        rejectUnauthorized: true
+      }
     })
 
-    // Verify SMTP connection configuration
-    try {
-      await transporter.verify()
-      console.log('SMTP connection verified')
-    } catch (error) {
-      console.error('SMTP verification failed:', error)
-      throw error
-    }
-
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
-      subject: `${subject}`,
+      subject: `Portfolio Contact: ${subject}`,
       text: `
-        Name: ${name}
+New Contact Message:
+------------------
+From: ${name}
+Email: ${email}
+Subject: ${subject}
 
-        ${message}
+Message:
+${message}
       `,
       replyTo: email,
     }
 
+    // Log before sending
+    console.log('Attempting to send email...')
+    
     const info = await transporter.sendMail(mailOptions)
-    console.log('Email sent:', info.messageId)
+    console.log('Email sent successfully:', info.messageId)
 
-    return NextResponse.json({ success: true, message: "Email sent successfully" })
+    return NextResponse.json({ 
+      success: true, 
+      message: "Email sent successfully",
+      messageId: info.messageId 
+    })
   } catch (error) {
     console.error("Email send error:", error)
     return NextResponse.json(
-      { error: "Internal Server Error", detail: String(error) },
+      { 
+        error: "Failed to send email", 
+        detail: error instanceof Error ? error.message : String(error)
+      },
       { status: 500 }
     )
   }
