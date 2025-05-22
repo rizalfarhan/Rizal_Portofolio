@@ -35,7 +35,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button asChild size="lg" className="rounded-full group relative overflow-hidden">
                 <Link href="#portfolio" className="flex items-center gap-2">
-                  <span className="relative z-10">Lihat Portofolio</span>
+                  <span className="relative z-10">View Portfolio</span>
                   <motion.div
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -48,7 +48,7 @@ export function HeroSection() {
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full group relative overflow-hidden">
                 <Link href="#contact" className="relative z-10">
-                  <span className="relative z-10">Kontak Saya</span>
+                  <span className="relative z-10">Contact Me</span>
                   <span className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                 </Link>
               </Button>
@@ -59,7 +59,7 @@ export function HeroSection() {
                   rel="noopener noreferrer"
                   className="relative z-10"
                 >
-                  <span className="relative z-10">Lihat CV</span>
+                  <span className="relative z-10">View CV</span>
                   <span className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                 </Link>
               </Button>

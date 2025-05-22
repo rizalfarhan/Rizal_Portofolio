@@ -6,6 +6,23 @@ export async function POST(req: Request) {
     const body = await req.json()
     const { name, email, subject, message } = body
 
+    // Validate inputs
+    if (!name || !email || !subject || !message) {
+      return NextResponse.json(
+        { error: "All fields are required" },
+        { status: 400 }
+      )
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: "Invalid email format" },
+        { status: 400 }
+      )
+    }
+    
     // Debug logging for environment variables
     console.log('Environment check:', {
       hasEmailUser: !!process.env.EMAIL_USER,
@@ -17,17 +34,18 @@ export async function POST(req: Request) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
+      service: 'gmail',  // Changed from host to service
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
-      },
-      tls: {
-        rejectUnauthorized: true
       }
-    })
+    });
+
+    // Add connection verification
+    await transporter.verify().catch(err => {
+      console.error('Transporter verification failed:', err);
+      throw new Error('Email configuration error');
+    });
 
     const mailOptions = {
       from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
