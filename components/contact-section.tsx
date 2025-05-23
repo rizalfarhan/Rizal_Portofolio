@@ -29,12 +29,6 @@ export function ContactSection() {
     setError(null)
     setSuccess(false)
 
-    if (!name || !email || !subject || !message) {
-      setError("All fields are required.")
-      setLoading(false)
-      return
-    }
-
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -42,8 +36,10 @@ export function ContactSection() {
         body: JSON.stringify({ name, email, subject, message }),
       })
 
-      const data = await res.json()
-      if (!res.ok) throw new Error(data.error || "Something went wrong")
+      if (!res.ok) {
+        const errorData = await res.json()
+        throw new Error(errorData.error || "Failed to send message")
+      }
 
       setSuccess(true)
       setName("")
@@ -51,7 +47,8 @@ export function ContactSection() {
       setSubject("")
       setMessage("")
     } catch (err: any) {
-      setError(err.message)
+      console.error("Submission error:", err)
+      setError(err.message || "Failed to send message")
     } finally {
       setLoading(false)
     }
