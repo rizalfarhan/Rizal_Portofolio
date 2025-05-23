@@ -37,6 +37,7 @@ export function PortfolioSection() {
       imagePosition: "50% 60%", 
       description: "Pplikasi mobile yang dirancang untuk meningkatkan fleksibilitas, efisiensi, dan akurasi sistem presensi dosen dan karyawan di Politeknik Negeri Semarang melalui verifikasi digital dan pemantauan real-time.",
       tags: ["UI/UX", "Presensi", "Mobile"],
+      link: "https://github.com/syahrulcaem/selin-backend",
     },
     {
       title: "Nusantara Playhouse",
@@ -60,23 +61,24 @@ export function PortfolioSection() {
       image: "/placeholder.svg?height=600&width=800",
       imagePosition: "50% 50%",
       description: "Sistem rekrutmen online yang mempermudah proses seleksi. Pelamar dapat melamar secara daring, sementara HR menyaring dan mengelola data kandidat secara efisien dan terstruktur.",
-      tags: ["Mobile", "Health", "UI/UX"],
+      tags: ["Web", "Rekrutmen", "UI/UX"],
     },
     {
-      title: "Educational Platform",
-      category: "Web Design",
+      title: "CINEMATE",
+      category: "UI/UX Design",
       image: "/placeholder.svg?height=600&width=800",
       imagePosition: "50% 50%",
       description: "An educational platform designed for optimal learning experience.",
-      tags: ["Web", "Education", "UI/UX"],
+      tags: ["Mobile", "Film", "UI/UX"],
+      link: "https://www.figma.com/proto/Gg1Thvi5wUrQwGfwbSiNOZ/Cinemate?node-id=87-2602&t=au6mHQMkM7VOY6qn-1&scaling=scale-down&content-scaling=fixed&page-id=87%3A249&starting-point-node-id=87%3A250",
     },
     {
-      title: "Smart Home Control App",
-      category: "UI Design",
-      image: "/placeholder.svg?height=600&width=800",
+      title: "Rebranding Tengoku",
+      category: "Design",
+      image: "/images/Logo Tengoku.jpg?height=600&width=800",
       imagePosition: "50% 50%",
       description: "An intuitive app for controlling smart home devices.",
-      tags: ["Mobile", "IoT", "UI"],
+      tags: ["Design", "Rebranding", "UI"],
     },
   ]
 
@@ -117,10 +119,17 @@ export function PortfolioSection() {
                     style={{ objectPosition: project.imagePosition || '50% 50%' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <Button variant="default" size="sm" className="gap-2">
-                      View Project
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
+                    <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                    >
+                        <Button variant="default" size="sm" className="gap-2">
+                            View Project
+                            <ExternalLink className="h-4 w-4" />
+                        </Button>
+                    </a>
                   </div>
                 </div>
                 <div className="p-6">
