@@ -4,7 +4,15 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Figma, Palette, Layers, Users } from "lucide-react"
+import { 
+  Figma, 
+  Palette, 
+  Layers, 
+  Users, 
+  Code2, 
+  Wind,
+  FileCode
+} from "lucide-react"
 
 export function SkillsSection() {
   const ref = useRef(null)
@@ -46,17 +54,32 @@ export function SkillsSection() {
       description: "User research, wireframing, usability testing, information architecture",
       icon: <Users className="h-10 w-10 text-primary" />,
     },
+    {
+      name: "HTML & CSS",
+      description: "Semantic markup, responsive layout, flexbox & grid, styling consistency",
+      icon: <Code2 className="h-10 w-10 text-primary" />,
+    },
+    {
+      name: "Tailwind CSS",
+      description: "Rapid prototyping, utility-first styling, custom design implementation from Figma",
+      icon: <Wind className="h-10 w-10 text-primary" />,
+    },
+    {
+      name: "JavaScript",
+      description: "DOM manipulation, event handling, interactive UI components",
+      icon: <FileCode className="h-10 w-10 text-primary" />,
+    },
   ]
 
   return (
-    <section id="skills" className="py-20 md:py-32 relative">
+    <section id="skills">
       <div className="container relative z-10">
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-start">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6 }}
-            className="md:w-1/3"
+            className="md:w-1/4"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 mb-4 text-xs font-medium text-primary border border-primary/20">
               My Skills
@@ -65,13 +88,13 @@ export function SkillsSection() {
             <p className="text-muted-foreground">
               I combine design tools and principles to create digital experiences that are pleasing to the eye, easy to use, and meet user needs while supporting business goals.            </p>
           </motion.div>
-
+          
           <motion.div
             ref={ref}
             variants={container}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:w-2/3"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 md:w-3/4"
           >
             {skills.map((skill, index) => (
               <motion.div key={index} variants={item}>

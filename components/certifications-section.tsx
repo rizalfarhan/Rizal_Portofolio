@@ -62,7 +62,7 @@ export default function Certifications() {
   ]
 
   return (
-    <section id="certifications" className="py-20"> {/* Update id */}
+    <section id="certifications"> {/* Update id */}
       <div className="container relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
           <div>

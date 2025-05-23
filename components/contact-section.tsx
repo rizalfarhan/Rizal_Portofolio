@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
-import { Mail, Linkedin, Send, MapPin } from "lucide-react"
+import { Mail, Linkedin, Send, MapPin, Instagram } from "lucide-react"
 
 export function ContactSection() {
   const ref = useRef(null)
@@ -62,7 +62,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 md:py-32 relative">
+    <section id="contact">
       <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
@@ -108,7 +108,24 @@ export function ContactSection() {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    linkedin.com/in/rizalfarhannanda
+                    rizalfarhannanda
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Instagram className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-medium mb-1">Instagram</h3>
+                  <a
+                    href="https://www.instagram.com/rzlfrhnn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    @rzlfrhnn
                   </a>
                 </div>
               </div>

@@ -35,7 +35,7 @@ export function PortfolioSection() {
       category: "UI/UX Design",
       image: "/images/Team Selin.jpg?height=600&width=800",
       imagePosition: "50% 60%", 
-      description: "Pplikasi mobile yang dirancang untuk meningkatkan fleksibilitas, efisiensi, dan akurasi sistem presensi dosen dan karyawan di Politeknik Negeri Semarang melalui verifikasi digital dan pemantauan real-time.",
+      description: "A mobile application designed to increase the flexibility, efficiency, and accuracy of the lecturer and employee attendance system at Politeknik Negeri Semarang through digital verification and real-time monitoring.",
       tags: ["UI/UX", "Presensi", "Mobile"],
       link: "https://github.com/syahrulcaem/selin-backend",
     },
@@ -44,7 +44,7 @@ export function PortfolioSection() {
       category: "Game Developer",
       image: "/images/Team Nusantara Playhouse.jpg?height=600&width=800",
       imagePosition: "50% 55%",
-      description: "Mengembangkan game edukatif berbasis Unity berjudul Nusantara Playhouse, yang terdiri dari tiga mini-game bertema budaya Indonesia. Bertanggung jawab penuh atas Game 3: Rasa Indonesia, permainan tebak makanan tradisional dari berbagai daerah.",
+      description: "Developed a Unity-based educational game called Nusantara Playhouse, which consists of three mini-games themed on Indonesian culture. Fully responsible for Game 3: Rasa Indonesia, a traditional food guessing game from various regions.",
       tags: ["Game", "Unity", "UI/UX"],
     },
     {
@@ -52,7 +52,7 @@ export function PortfolioSection() {
       category: "IoT",
       image: "/images/Team Waste.jpg?height=600&width=800",
       imagePosition: "50% 60%",
-      description: "Merancang sistem pemilah sampah otomatis berbasis Arduino yang mampu membedakan sampah basah dan kering menggunakan sensor kelembaban dan ultrasonik.",
+      description: "Designing an automatic waste sorting system based on Arduino that is able to distinguish wet and dry waste using humidity and ultrasonic sensors.",
       tags: ["IoT", "Embedded System", "Arduino"],
     },
     {
@@ -86,7 +86,7 @@ export function PortfolioSection() {
   const displayedProjects = showAll ? projects : projects.slice(0, 6)
 
   return (
-    <section id="portfolio" className="py-20 md:py-32 relative">
+    <section id="portfolio">
       <div className="container relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
           <div>

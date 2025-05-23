@@ -11,7 +11,7 @@ export function AboutSection() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <section id="about" className="pt-12 md:pt-16">
+    <section id="about">
       <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
