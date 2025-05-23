@@ -50,12 +50,11 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_TO,
-      subject: `Contact Form: ${subject}`,
+      subject: `${subject}`,
       text: `
         Name: ${name}
-        Email: ${email}
-        Subject: ${subject}
-        Message: ${message}
+
+        ${message}
       `,
       replyTo: email,
     };
