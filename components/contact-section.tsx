@@ -23,22 +23,29 @@ export function ContactSection() {
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
 
-  async function handleSubmit(e: React.FormEvent) {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
     setError(null)
-    setSuccess(false)
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, subject, message }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message,
+        }),
       })
 
+      const data = await res.json()
+
       if (!res.ok) {
-        const errorData = await res.json()
-        throw new Error(errorData.error || "Failed to send message")
+        throw new Error(data.error || "Something went wrong")
       }
 
       setSuccess(true)
@@ -46,9 +53,9 @@ export function ContactSection() {
       setEmail("")
       setSubject("")
       setMessage("")
-    } catch (err: any) {
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to send message")
       console.error("Submission error:", err)
-      setError(err.message || "Failed to send message")
     } finally {
       setLoading(false)
     }

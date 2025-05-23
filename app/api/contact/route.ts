@@ -54,6 +54,7 @@ export async function POST(req: Request) {
       text: `
         Name: ${name}
         Email: ${email}
+        Subject: ${subject}
         Message: ${message}
       `,
       replyTo: email,
