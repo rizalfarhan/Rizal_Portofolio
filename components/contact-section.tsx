@@ -136,7 +136,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-sm font-medium mb-1">Location</h3>
-                  <p className="text-muted-foreground">Semarang, Indonesia</p>
+                  <p className="text-muted-foreground">Semarang, Central Java, Indonesia</p>
                 </div>
               </div>
             </div>

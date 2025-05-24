@@ -52,10 +52,9 @@ export async function POST(req: Request) {
       to: process.env.EMAIL_TO,
       subject: `${subject}`,
       text: `
-        Name: ${name}
+      Name: ${name}
 
-        ${message}
-      `,
+      ${message}`,
       replyTo: email,
     };
 
