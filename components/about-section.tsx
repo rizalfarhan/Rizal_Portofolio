@@ -52,17 +52,17 @@ export function AboutSection() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
               Rizal Farhan Nanda
             </h2>
-            <div className="space-y-4 text-muted-foreground">
+            <div className="space-y-3 text-muted-foreground">
               <p>
-                I am Rizal Farhan Nanda, an Informatics Engineering student focusing on application development and user interface design (UI/UX). I have worked on various projects ranging from mobile applications, interactive websites, to management systems such as attendance systems and data monitoring dashboards. With the latest technology, I always try to implement creative and functional solutions in each of my works.
+                I am Rizal Farhan Nanda, an Informatics Engineering student at Politeknik Negeri Semarang who has a strong interest in application development and UI/UX design. Through academic projects and self-directed learning, I have gained solid experience in creating responsive and user-centered digital solutions, including mobile apps, interactive websites, and management systems such as attendance tracking.
               </p>
               <p>
-                In addition to technical development, I also actively collaborate in teams to hone my communication and cooperation skills. I believe that the combination of creativity, logic, and teamwork is the key to producing meaningful digital solutions.
+                In addition to technical skills, I actively collaborate in teams to improve communication and problem-solving abilities. I believe that creativity, logic, and teamwork are essential to building meaningful digital products. I am currently looking for an internship opportunity as a UI/UX Designer to apply my skills in creating visually appealing and easy-to-use interfaces.
               </p>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mt-8">
+            <div className="grid grid-cols-3 gap-4 mt-5">
               <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
                 <div className="flex justify-center items-center h-12 mb-2">
                   <GraduationCap className="w-10 h-10 text-primary" />

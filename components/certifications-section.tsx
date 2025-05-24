@@ -19,7 +19,7 @@ const Certification = ({ title, issuer, date, pdfUrl }: CertificationProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Card className="overflow-hidden h-full hover:shadow-md transition-shadow border-primary/10 group p-6">
+      <Card className="overflow-hidden h-full hover:shadow-md transition-shadow border-primary/10 group p-6 flex flex-col">
         <div className="mb-2">
           <span className="text-xs font-medium text-primary px-2 py-1 rounded-full bg-primary/10">
             {issuer}
@@ -31,7 +31,7 @@ const Certification = ({ title, issuer, date, pdfUrl }: CertificationProps) => {
         <p className="text-sm text-muted-foreground mb-4">
           Date Certificate: {date}
         </p>
-        <div className="flex justify-end mt-auto">
+        <div className="mt-auto self-end">
           <Button asChild size="sm" className="gap-2">
             <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
               View Certificate
@@ -48,7 +48,7 @@ export default function Certifications() {
   const certifications = [
     {
       title: "CCNA: Switching, Routing, and Wireless Essentials",
-      issuer: "Cisco",
+      issuer: "Cisco Networking Academy",
       date: "2025",
       pdfUrl: "/certificates/CCNA.pdf"
     },
