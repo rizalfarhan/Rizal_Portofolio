@@ -26,7 +26,7 @@ export function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl transform -rotate-3"></div>
               <div className="absolute inset-0 rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/rizal_foto3.jpg"
+                  src="/images/rizal_foto5.jpg"
                   alt="About Rizal Farhan Nanda"
                   fill
                   className="object-cover object-[center_10%]" // Mengubah posisi foto ke bawah 70%

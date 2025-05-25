@@ -31,13 +31,12 @@ export function PortfolioSection() {
 
   const projects = [
     {
-      title: "SELIN Mobile App",
+      title: "Mitra Karya Group",
       category: "UI/UX Design",
-      image: "/images/Team Selin.jpg?height=600&width=800",
-      imagePosition: "50% 60%", 
-      description: "A mobile application to improve the accuracy and efficiency of lecturer and staff attendance at Politeknik Negeri Semarang by using digital verification and real-time tracking.",
-      tags: ["Mobile", "Attendance", "UI/UX"],
-      link: "https://github.com/syahrulcaem/selin-backend",
+      image: "/placeholder.svg?height=600&width=800",
+      imagePosition: "50% 50%",
+      description: "A web-based recruitment platform to simplify the hiring process. Applicants can apply online, while HR can screen and manage candidate data in a structured manner.",
+      tags: ["Web", "Recruitment", "UI/UX"],
     },
     {
       title: "Nusantara Playhouse",
@@ -46,6 +45,16 @@ export function PortfolioSection() {
       imagePosition: "50% 55%",
       description: "A Unity-based educational game with Indonesian cultural themes. Designing Rasa Indonesia, a mini-game that focuses on identifying traditional foods from various regions.",
       tags: ["Game", "Education", "UI/UX"],
+      link: "https://www.notion.so/Nusantara-Playhouse-1fe0c81d21db807db0ebd819001b8e98?pvs=4",
+    },
+    {
+      title: "System Attendance Polines",
+      category: "UI/UX Design",
+      image: "/images/Team Selin.jpg?height=600&width=800",
+      imagePosition: "50% 60%", 
+      description: "A mobile application to improve the accuracy and efficiency of lecturer and staff attendance at Politeknik Negeri Semarang by using digital verification and real-time tracking.",
+      tags: ["Mobile", "Attendance", "UI/UX"],
+      link: "https://www.figma.com/proto/hg6j17S3ItthjMTsIrciYH/SELIN-APP?node-id=6-158&p=f&t=VIloFY2D08XS7AXT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
     },
     {
       title: "Automatic Waste Sorting System",
@@ -54,14 +63,7 @@ export function PortfolioSection() {
       imagePosition: "50% 60%",
       description: "An Arduino-based IoT system that automatically detects and sorts wet and dry waste using humidity and ultrasonic sensors for better waste management.",
       tags: ["IoT", "Waste Management", "Embedded System"],
-    },
-    {
-      title: "Mitra Karya Group",
-      category: "UI/UX Design",
-      image: "/placeholder.svg?height=600&width=800",
-      imagePosition: "50% 50%",
-      description: "A web-based recruitment platform to simplify the hiring process. Applicants can apply online, while HR can screen and manage candidate data in a structured manner.",
-      tags: ["Web", "Recruitment", "UI/UX"],
+      link: "https://www.notion.so/Automatic-Waste-Sorting-System-1fe0c81d21db800088f3c0783f7b90bc?pvs=4",
     },
     {
       title: "CINEMATE",

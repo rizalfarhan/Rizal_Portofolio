@@ -49,16 +49,33 @@ export default function Certifications() {
     {
       title: "CCNA: Switching, Routing, and Wireless Essentials",
       issuer: "Cisco Networking Academy",
-      date: "2025",
+      date: "january 2025",
       pdfUrl: "/certificates/CCNA.pdf"
     },
     {
-      title: "Career Essentials in Generative AI ",
+      title: "Database Programming with SQL",
+      issuer: "Oracle Academy",
+      date: "December 2024",
+      pdfUrl: "/certificates/Database Programing.pdf"
+    },
+    {
+      title: "Career Essentials in Generative AI",
       issuer: "Microsoft and LinkedIn",
-      date: "2024",
+      date: "October 2024",
       pdfUrl: "/certificates/Career Essentials in Generative AI.pdf"
     },
-    // Tambahkan lainnya jika perlu
+    {
+      title: "Database Design with SQL",
+      issuer: "Oracle Academy",
+      date: "October 2024",
+      pdfUrl: "/certificates/Database Design.pdf"
+    },
+    {
+      title: "Junior Network Administrator",
+      issuer: "LSP Teknologi Digital – BNSP",
+      date: "April 2023",
+      pdfUrl: "/certificates/Sertifikat SMK.pdf"
+    },
   ]
 
   return (
