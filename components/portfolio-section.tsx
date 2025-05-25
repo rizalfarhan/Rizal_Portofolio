@@ -72,7 +72,7 @@ export function PortfolioSection() {
       imagePosition: "50% 50%",
       description: "A movie streaming app aimed at students and young adults. Prioritizing affordability, minimal advertising, and features such as shared viewing and account access.",
       tags: ["Mobile", "Streaming", "UI/UX"],
-      link: "https://www.figma.com/proto/Gg1Thvi5wUrQwGfwbSiNOZ/Cinemate?node-id=87-2602&t=au6mHQMkM7VOY6qn-1&scaling=scale-down&content-scaling=fixed&page-id=87%3A249&starting-point-node-id=87%3A250",
+      link: "https://www.figma.com/proto/Gg1Thvi5wUrQwGfwbSiNOZ/Cinemate?node-id=117-738&p=f&t=Q6uI10XGd3F5Clsw-1&scaling=scale-down&content-scaling=fixed&page-id=117%3A732&starting-point-node-id=117%3A736",
     },
     {
       title: "Rebranding Tengoku",
