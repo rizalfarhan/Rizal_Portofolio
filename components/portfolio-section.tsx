@@ -37,6 +37,7 @@ export function PortfolioSection() {
       imagePosition: "50% 50%",
       description: "A web-based recruitment platform to simplify the hiring process. Applicants can apply online, while HR can screen and manage candidate data in a structured manner.",
       tags: ["Web", "Recruitment", "UI/UX"],
+      link: "https://www.figma.com/design/Gg1Thvi5wUrQwGfwbSiNOZ/Cinemate?node-id=87-249&t=n0gTOcVPtBE3BHgi-1",
     },
     {
       title: "Nusantara Playhouse",
@@ -55,6 +56,8 @@ export function PortfolioSection() {
       description: "A mobile application to improve the accuracy and efficiency of lecturer and staff attendance at Politeknik Negeri Semarang by using digital verification and real-time tracking.",
       tags: ["Mobile", "Attendance", "UI/UX"],
       link: "https://www.figma.com/proto/hg6j17S3ItthjMTsIrciYH/SELIN-APP?node-id=6-158&p=f&t=VIloFY2D08XS7AXT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+      secondaryLink: "https://www.figma.com/design/hg6j17S3ItthjMTsIrciYH/SELIN-APP?node-id=0-1&t=Om4gTP0R9sioPUEB-1",
+      secondaryLabel: "Figma"
     },
     {
       title: "To-Do List",
@@ -64,6 +67,8 @@ export function PortfolioSection() {
       description: "A web-based to-do list application that I designed and developed to help users manage their daily tasks easily and efficiently.",
       tags: ["Web", "Task Management", "UI/UX"],
       link: "https://todolist.rizalfarhan.my.id/",
+      secondaryLink: "https://github.com/rizalfarhan/todolist",
+      secondaryLabel: "GitHub"
     },
     {
       title: "Automatic Waste Sorting System",
@@ -81,7 +86,9 @@ export function PortfolioSection() {
       imagePosition: "50% 50%",
       description: "A movie streaming app aimed at students and young adults. Prioritizing affordability, minimal advertising, and features such as shared viewing and account access.",
       tags: ["Mobile", "Streaming", "UI/UX"],
-      link: "https://www.figma.com/proto/Gg1Thvi5wUrQwGfwbSiNOZ/Cinemate?node-id=117-738&p=f&t=Q6uI10XGd3F5Clsw-1&scaling=scale-down&content-scaling=fixed&page-id=117%3A732&starting-point-node-id=117%3A736",
+      link: "https://www.figma.com/proto/Gg1Thvi5wUrQwGfwbSiNOZ/Cinemate",
+      secondaryLink: "https://www.figma.com/design/Gg1Thvi5wUrQwGfwbSiNOZ/Cinemate?node-id=87-249&t=n0gTOcVPtBE3BHgi-1",
+      secondaryLabel: "Figma"
     },
     {
       title: "Rebranding Tengoku",
@@ -130,18 +137,33 @@ export function PortfolioSection() {
                     className="object-cover transition-transform group-hover:scale-105 duration-500"
                     style={{ objectPosition: project.imagePosition || '50% 50%' }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <a 
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 gap-2">
+                    {project.link && (
+                      <a 
                         href={project.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-block"
-                    >
+                      >
                         <Button variant="default" size="sm" className="gap-2">
-                            View Project
-                            <ExternalLink className="h-4 w-4" />
+                          View Project
+                          <ExternalLink className="h-4 w-4" />
                         </Button>
-                    </a>
+                      </a>
+                    )}
+                    {project.secondaryLink && (
+                      <a 
+                        href={project.secondaryLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                      >
+                        <Button variant="secondary" size="sm" className="gap-2">
+                          {project.secondaryLabel || "Lihat Detail"}
+                          <ExternalLink className="h-4 w-4" />
+                        </Button>
+                      </a>
+                    )}
                   </div>
                 </div>
                 <div className="p-6">
@@ -189,4 +211,17 @@ export function PortfolioSection() {
       <div className="absolute bottom-1/3 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
     </section>
   )
+}
+
+interface Project {
+  title: string;
+  category: string;
+  image?: string;
+  imagePosition?: string;
+  description: string;
+  tags: string[];
+  link?: string;
+  githubLink?: string;
+  secondaryLink?: string;
+  secondaryLabel?: string; // Label untuk tombol kedua
 }
