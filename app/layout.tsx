@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Rizal Farhan Nanda | UI/UX Designer",
+  title: "Rizal Farhan Nanda",
   description: "Portfolio of Rizal Farhan Nanda, a UI/UX Designer based in Semarang, Indonesia",
     generator: 'v0.dev'
 }

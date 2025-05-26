@@ -57,6 +57,15 @@ export function PortfolioSection() {
       link: "https://www.figma.com/proto/hg6j17S3ItthjMTsIrciYH/SELIN-APP?node-id=6-158&p=f&t=VIloFY2D08XS7AXT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
     },
     {
+      title: "To-Do List",
+      category: "To-Do List",
+      image: "/images/todolist.png?height=600&width=800",
+      imagePosition: "50% 60%", 
+      description: "A web-based to-do list application that I designed and developed to help users manage their daily tasks easily and efficiently.",
+      tags: ["Web", "Task Management", "UI/UX"],
+      link: "https://todolist.rizalfarhan.my.id/",
+    },
+    {
       title: "Automatic Waste Sorting System",
       category: "Internet of Things",
       image: "/images/Team Waste.jpg?height=600&width=800",
