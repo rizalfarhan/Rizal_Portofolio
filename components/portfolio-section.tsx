@@ -82,7 +82,7 @@ export function PortfolioSection() {
     {
       title: "CINEMATE",
       category: "UI/UX Design",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/images/CINEMATE.png?height=600&width=800",
       imagePosition: "50% 50%",
       description: "A movie streaming app aimed at students and young adults. Prioritizing affordability, minimal advertising, and features such as shared viewing and account access.",
       tags: ["Mobile", "Streaming", "UI/UX"],
