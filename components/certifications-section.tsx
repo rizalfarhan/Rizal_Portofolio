@@ -48,7 +48,7 @@ export default function Certifications() {
   const certifications = [
     {
       title: "CCNA: Switching, Routing, and Wireless Essentials",
-      issuer: "Cisco Networking Academy",
+      issuer: "Cisco",
       date: "january 2025",
       pdfUrl: "/certificates/CCNA.pdf"
     },

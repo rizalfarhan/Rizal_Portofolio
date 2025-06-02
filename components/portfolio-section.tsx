@@ -31,6 +31,15 @@ export function PortfolioSection() {
 
   const projects = [
     {
+      title: "My Coffe",
+      category: "UI/UX Design",
+      image: "/images/mycof.png?height=600&width=800",
+      imagePosition: "50% 50%",
+      description: "A web platform for MyCof, offering information on our coffee, menu, and updates. Designed to share the cozy experience we’ve brought to Semarang since 2025.",
+      tags: ["Web", "Food & Beverage", "UI/UX"],
+      link: "https://www.figma.com/proto/BxQKS1CK9fq9ch4fJD7kqi/MULMED?node-id=1-103&p=f&t=klYwvOtMNaK5qbGZ-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A103",
+    },
+    {
       title: "Mitra Karya Group",
       category: "UI/UX Design",
       image: "/images/Mitrakarya.png?height=600&width=800",

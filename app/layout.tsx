@@ -8,7 +8,10 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Rizal Farhan Nanda",
   description: "Portfolio of Rizal Farhan Nanda, a UI/UX Designer based in Semarang, Indonesia",
-    generator: 'v0.dev'
+    generator: 'v0.dev',
+  icons: {
+    icon: "/images/aku1.png",
+},
 }
 
 export default function RootLayout({

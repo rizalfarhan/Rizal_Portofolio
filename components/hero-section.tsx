@@ -30,7 +30,7 @@ export function HeroSection() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-5 leading-relaxed">
-              Informatics Engineering student of Politeknik Negeri Semarang who is looking for an internship opportunity in the position of UI/UX Designer.              
+              An Informatics Engineering student at Semarang State Polytechnic seeking an internship opportunity as a UI/UX Designer.              
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button asChild size="lg" className="rounded-full group relative overflow-hidden">
@@ -54,7 +54,7 @@ export function HeroSection() {
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full group relative overflow-hidden">
                 <Link 
-                  href="/Rizal Farhan Nanda (2).pdf" 
+                  href="/Rizal Farhan Nanda1.pdf" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative z-10"
