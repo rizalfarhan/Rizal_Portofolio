@@ -33,7 +33,7 @@ export function PortfolioSection() {
     {
       title: "Mitra Karya Group",
       category: "UI/UX Design",
-      image: "/images/Dashboard.png?height=600&width=800",
+      image: "/images/Mitrakarya.png?height=600&width=800",
       imagePosition: "50% 50%",
       description: "A web-based recruitment platform to simplify the hiring process. Applicants can apply online, while HR can screen and manage candidate data in a structured manner.",
       tags: ["Web", "Recruitment", "UI/UX"],
@@ -42,7 +42,7 @@ export function PortfolioSection() {
     {
       title: "Nusantara Playhouse",
       category: "Game Developer",
-      image: "/images/Team Nusantara Playhouse.jpg?height=600&width=800",
+      image: "/images/Nusantara.png?height=600&width=800",
       imagePosition: "50% 55%",
       description: "A Unity-based educational game with Indonesian cultural themes. Designing Rasa Indonesia, a mini-game that focuses on identifying traditional foods from various regions.",
       tags: ["Game", "Education", "UI/UX"],
@@ -51,7 +51,7 @@ export function PortfolioSection() {
     {
       title: "System Attendance Polines",
       category: "UI/UX Design",
-      image: "/images/Team Selin.jpg?height=600&width=800",
+      image: "/images/SELIN.png?height=600&width=800",
       imagePosition: "50% 60%", 
       description: "A mobile application to improve the accuracy and efficiency of lecturer and staff attendance at Politeknik Negeri Semarang by using digital verification and real-time tracking.",
       tags: ["Mobile", "Attendance", "UI/UX"],
@@ -60,7 +60,7 @@ export function PortfolioSection() {
       secondaryLabel: "Figma"
     },
     {
-      title: "StydyMate",
+      title: "StudyMate",
       category: "To-Do List",
       image: "/images/studymate.png?height=600&width=800",
       imagePosition: "50% 60%", 
@@ -80,7 +80,7 @@ export function PortfolioSection() {
       link: "https://www.notion.so/Automatic-Waste-Sorting-System-1fe0c81d21db800088f3c0783f7b90bc?pvs=4",
     },
     {
-      title: "CINEMATE",
+      title: "Cinemate",
       category: "UI/UX Design",
       image: "/images/CINEMATE.png?height=600&width=800",
       imagePosition: "50% 50%",
@@ -93,7 +93,7 @@ export function PortfolioSection() {
     {
       title: "Rebranding Tengoku",
       category: "UI/UX Design",
-      image: "/images/Team UIUX.jpg?height=600&width=800",
+      image: "/images/Tengoku.png?height=600&width=800",
       imagePosition: "0% 50%",
       description: "Rebranding project for Tengoku Custom MSME. Redesigned logo, product catalog, and marketing banners to attract a younger audience and strengthen visual identity.",
       tags: ["Visual Design", "Branding", "UI/UX"],
