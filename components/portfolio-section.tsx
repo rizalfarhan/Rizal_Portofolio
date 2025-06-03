@@ -42,7 +42,7 @@ export function PortfolioSection() {
     {
       title: "Mitra Karya Group",
       category: "UI/UX Design",
-      image: "/images/mitrakarya.png?height=600&width=800",
+      image: "/images/karya.png?height=600&width=800",
       imagePosition: "50% 50%",
       description: "A web-based recruitment platform to simplify the hiring process. Applicants can apply online, while HR can screen and manage candidate data in a structured manner.",
       tags: ["Web", "Recruitment", "UI/UX"],
@@ -90,7 +90,7 @@ export function PortfolioSection() {
     },
     {
       title: "Cinemate",
-      category: "UI/UX Desig",
+      category: "UI/UX Design",
       image: "/images/cinemate.png?height=600&width=800",
       imagePosition: "50% 50%",
       description: "A movie streaming app aimed at students and young adults. Prioritizing affordability, minimal advertising, and features such as shared viewing and account access.",
