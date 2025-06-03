@@ -29,7 +29,7 @@ const Certification = ({ title, issuer, date, pdfUrl }: CertificationProps) => {
           {title}
         </h3>
         <p className="text-sm text-muted-foreground mb-4">
-          Date Certificate: {date}
+          Issued: {date}
         </p>
         <div className="mt-auto self-end">
           <Button asChild size="sm" className="gap-2">
@@ -84,11 +84,12 @@ export default function Certifications() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 mb-4 text-xs font-medium text-primary border border-primary/20">
-              Certifications
+              My Certifications
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Certificates</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Certifications</h2>
             <p className="text-muted-foreground max-w-xl">
-              My professional certification is a testament to my expertise and commitment to continuous learning.            </p>
+              My certifications are a testament to my expertise and commitment to continuous learning.
+            </p>
           </div>
         </div>
 

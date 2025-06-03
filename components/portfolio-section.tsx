@@ -119,7 +119,7 @@ export function PortfolioSection() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 mb-4 text-xs font-medium text-primary border border-primary/20">
-              My Portfolio
+              My Projects
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Projects</h2>
             <p className="text-muted-foreground max-w-xl">
