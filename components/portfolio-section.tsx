@@ -198,22 +198,24 @@ export function PortfolioSection() {
           ))}
         </motion.div>
 
-        <div className="flex justify-center mt-12">
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="rounded-full group"
-            onClick={() => setShowAll(!showAll)}
-          >
-            <span>{showAll ? "Show Less" : "View All Projects"}</span>
-            <ArrowRight 
-              className={cn(
-                "ml-2 h-4 w-4 transition-transform",
-                showAll ? "rotate-180" : "group-hover:translate-x-1"
-              )} 
-            />
-          </Button>
-        </div>
+        {projects.length > 6 && (
+          <div className="flex justify-center mt-12">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="rounded-full group"
+              onClick={() => setShowAll(!showAll)}
+            >
+              <span>{showAll ? "Show Less" : "View All Projects"}</span>
+              <ArrowRight 
+                className={cn(
+                  "ml-2 h-4 w-4 transition-transform",
+                  showAll ? "rotate-180" : "group-hover:translate-x-1"
+                )} 
+              />
+            </Button>
+          </div>
+        )}
       </div>
 
       {/* Background elements */}
