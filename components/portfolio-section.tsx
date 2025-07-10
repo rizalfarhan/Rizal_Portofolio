@@ -31,12 +31,12 @@ export function PortfolioSection() {
 
   const projects = [
     {
-      title: "My Coffe",
-      category: "UI/UX Design",
-      image: "/images/mycof.png?height=600&width=800",
+      title: "Unlock Us",
+      category: "Game Developer",
+      image: "/images/unlockus.png?height=600&width=800",
       imagePosition: "50% 50%",
-      description: "A web platform for MyCof, offering information on our coffee, menu, and updates. Designed to share the cozy experience we’ve brought to Semarang since 2025.",
-      tags: ["Web", "Food & Beverage", "UI/UX"],
+      description: "Unlock Us is a 2D cooperative puzzle-platformer game designed for two players to solve challenges through teamwork and coordination.",
+      tags: ["Game", "Puzzle", "Game Developer"],
       link: "https://www.figma.com/proto/BxQKS1CK9fq9ch4fJD7kqi/MULMED?node-id=1-103&p=f&t=klYwvOtMNaK5qbGZ-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A103",
     },
     {
@@ -54,7 +54,7 @@ export function PortfolioSection() {
       image: "/images/game.png?height=600&width=800",
       imagePosition: "50% 55%",
       description: "A Unity-based educational game with Indonesian cultural themes. Designing Rasa Indonesia, a mini-game that focuses on identifying traditional foods from various regions.",
-      tags: ["Game", "Education", "UI/UX"],
+      tags: ["Game", "Education", "Game Developer"],
       link: "https://www.notion.so/Nusantara-Playhouse-1fe0c81d21db807db0ebd819001b8e98?pvs=4",
     },
     {
@@ -68,26 +68,26 @@ export function PortfolioSection() {
       secondaryLink: "https://www.figma.com/design/hg6j17S3ItthjMTsIrciYH/SELIN-APP?node-id=0-1&t=Om4gTP0R9sioPUEB-1",
       secondaryLabel: "Figma"
     },
-    {
-      title: "StudyMate",
-      category: "To-Do List",
-      image: "/images/studymate.png?height=600&width=800",
-      imagePosition: "50% 60%", 
-      description: "A web-based to-do list application that I designed and developed to help users manage their daily tasks easily and efficiently.",
-      tags: ["Web", "Task Management", "UI/UX"],
-      link: "https://todolist.rizalfarhan.my.id/",
-      secondaryLink: "https://github.com/rizalfarhan/todolist",
-      secondaryLabel: "GitHub"
-    },
-    {
-      title: "Automatic Waste Sorting System",
-      category: "Internet of Things",
-      image: "/images/waste.png?height=600&width=800",
-      imagePosition: "50% 60%",
-      description: "An Arduino-based IoT system that automatically detects and sorts wet and dry waste using humidity and ultrasonic sensors for better waste management.",
-      tags: ["IoT", "Waste Management", "Embedded System"],
-      link: "https://www.notion.so/Automatic-Waste-Sorting-System-1fe0c81d21db800088f3c0783f7b90bc?pvs=4",
-    },
+    // {
+    //   title: "StudyMate",
+    //   category: "To-Do List",
+    //   image: "/images/studymate.png?height=600&width=800",
+    //   imagePosition: "50% 60%", 
+    //   description: "A web-based to-do list application that I designed and developed to help users manage their daily tasks easily and efficiently.",
+    //   tags: ["Web", "Task Management", "UI/UX"],
+    //   link: "https://todolist.rizalfarhan.my.id/",
+    //   secondaryLink: "https://github.com/rizalfarhan/todolist",
+    //   secondaryLabel: "GitHub"
+    // },
+    // {
+    //   title: "Automatic Waste Sorting System",
+    //   category: "Internet of Things",
+    //   image: "/images/waste.png?height=600&width=800",
+    //   imagePosition: "50% 60%",
+    //   description: "An Arduino-based IoT system that automatically detects and sorts wet and dry waste using humidity and ultrasonic sensors for better waste management.",
+    //   tags: ["IoT", "Waste Management", "Embedded System"],
+    //   link: "https://www.notion.so/Automatic-Waste-Sorting-System-1fe0c81d21db800088f3c0783f7b90bc?pvs=4",
+    // },
     {
       title: "Cinemate",
       category: "UI/UX Design",
@@ -99,15 +99,15 @@ export function PortfolioSection() {
       secondaryLink: "https://www.figma.com/design/Gg1Thvi5wUrQwGfwbSiNOZ/Cinemate?node-id=87-249&t=n0gTOcVPtBE3BHgi-1",
       secondaryLabel: "Figma"
     },
-    {
-      title: "Rebranding Tengoku",
-      category: "UI/UX Design",
-      image: "/images/tengo.png?height=600&width=800",
-      imagePosition: "0% 50%",
-      description: "Rebranding project for Tengoku Custom MSME. Redesigned logo, product catalog, and marketing banners to attract a younger audience and strengthen visual identity.",
-      tags: ["Visual Design", "Branding", "UI/UX"],
-      link: "https://www.notion.so/Rebranding-Tengoku-Custom-1fd0c81d21db80d98ad3ec55db53925b?pvs=4",
-    },
+    // {
+    //   title: "Rebranding Tengoku",
+    //   category: "UI/UX Design",
+    //   image: "/images/tengo.png?height=600&width=800",
+    //   imagePosition: "0% 50%",
+    //   description: "Rebranding project for Tengoku Custom MSME. Redesigned logo, product catalog, and marketing banners to attract a younger audience and strengthen visual identity.",
+    //   tags: ["Visual Design", "Branding", "UI/UX"],
+    //   link: "https://www.notion.so/Rebranding-Tengoku-Custom-1fd0c81d21db80d98ad3ec55db53925b?pvs=4",
+    // },
   ]
 
   // Filter projects yang ditampilkan

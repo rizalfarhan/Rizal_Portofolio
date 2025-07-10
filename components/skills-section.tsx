@@ -71,16 +71,16 @@ export function SkillsSection() {
       description: "DOM manipulation, event handling, interactive UI components",
       icon: <FileCode className="h-10 w-10 text-primary" />,
     },
-    {
-      name: "React",
-      description: "Component-based development, state management, hooks, custom hooks",
-      icon: <Component className="h-10 w-10 text-primary" />,
-    },
-    {
-      name: "Next.js",
-      description: "Server-side rendering, API routes, static site generation, routing",
-      icon: <Layout className="h-10 w-10 text-primary" />,
-    },
+    // {
+    //   name: "React",
+    //   description: "Component-based development, state management, hooks, custom hooks",
+    //   icon: <Component className="h-10 w-10 text-primary" />,
+    // },
+    // {
+    //   name: "Next.js",
+    //   description: "Server-side rendering, API routes, static site generation, routing",
+    //   icon: <Layout className="h-10 w-10 text-primary" />,
+    // },
   ]
 
   return (
