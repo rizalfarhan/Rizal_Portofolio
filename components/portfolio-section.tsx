@@ -37,7 +37,7 @@ export function PortfolioSection() {
       imagePosition: "50% 50%",
       description: "Unlock Us is a 2D cooperative puzzle-platformer game designed for two players to solve challenges through teamwork and coordination.",
       tags: ["Game", "Puzzle", "Game Developer"],
-      link: "https://www.figma.com/proto/BxQKS1CK9fq9ch4fJD7kqi/MULMED?node-id=1-103&p=f&t=klYwvOtMNaK5qbGZ-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A103",
+      link: "https://drive.google.com/file/d/1u752MWTtJNBufEkiGchOl4v1NC5qq7w4/view?usp=drivesdk",
     },
     {
       title: "Mitra Karya Group",

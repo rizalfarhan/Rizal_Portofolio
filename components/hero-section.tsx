@@ -52,7 +52,7 @@ export function HeroSection() {
                   <span className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full group relative overflow-hidden">
+              {/* <Button asChild variant="outline" size="lg" className="rounded-full group relative overflow-hidden">
                 <Link 
                   href="/Rizal Farhan Nanda1.pdf" 
                   target="_blank"
@@ -62,7 +62,7 @@ export function HeroSection() {
                   <span className="relative z-10">View CV</span>
                   <span className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                 </Link>
-              </Button>
+              </Button> */}
             </div>
             <div className="inline-flex items-center gap-2 text-muted-foreground">
               <MapPin className="h-4 w-4" />
