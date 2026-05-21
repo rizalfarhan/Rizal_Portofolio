@@ -47,6 +47,18 @@ const Certification = ({ title, issuer, date, pdfUrl }: CertificationProps) => {
 export default function Certifications() {
   const certifications = [
     {
+      title: "MikroTik Certified Network Associate (MTCNA)",
+      issuer: "MikroTik",
+      date: "February 2026",
+      pdfUrl: "/certificates/MTCNA.pdf"
+    },
+    {
+      title: "Intermediate Multimedia Designer",
+      issuer: "LSP Teknologi Digital – BNSP",
+      date: "September 2025",
+      pdfUrl: "/certificates/Sertifikat BNSP Multimedia.pdf"
+    },
+    {
       title: "CCNA: Switching, Routing, and Wireless Essentials",
       issuer: "Cisco",
       date: "january 2025",
@@ -70,12 +82,12 @@ export default function Certifications() {
       date: "October 2024",
       pdfUrl: "/certificates/Database Design.pdf"
     },
-    {
-      title: "Junior Network Administrator",
-      issuer: "LSP Teknologi Digital – BNSP",
-      date: "April 2023",
-      pdfUrl: "/certificates/Sertifikat SMK.pdf"
-    },
+    // {
+    //   title: "Junior Network Administrator",
+    //   issuer: "LSP Teknologi Digital – BNSP",
+    //   date: "April 2023",
+    //   pdfUrl: "/certificates/Sertifikat SMK.pdf"
+    // },
   ]
 
   return (
