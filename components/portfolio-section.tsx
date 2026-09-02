@@ -33,7 +33,7 @@ export function PortfolioSection() {
     {
       title: "Unlock Us",
       category: "Game Developer",
-      image: "/images/portofolio.png?height=600&width=800",
+      image: "/images/Portofolio.png?height=600&width=800",
       imagePosition: "50% 50%",
       description: "Unlock Us is a 2D cooperative puzzle-platformer game designed for two players to solve challenges through teamwork and coordination.",
       tags: ["Game", "Puzzle", "Game Developer"],
