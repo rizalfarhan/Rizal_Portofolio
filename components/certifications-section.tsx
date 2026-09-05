@@ -54,7 +54,7 @@ export default function Certifications() {
     },
     {
       title: "Intermediate Multimedia Designer",
-      issuer: "LSP Teknologi Digital – BNSP",
+      issuer: "Indonesian Professional Certification Authority (BNSP)",
       date: "September 2025",
       pdfUrl: "/certificates/Sertifikat BNSP Multimedia.pdf"
     },

@@ -30,7 +30,7 @@ export function HeroSection() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-5 leading-relaxed">
-              An Informatics Engineering student at Semarang State Polytechnic seeking an internship opportunity as a UI/UX Designer.              
+              Lulusan Politeknik Negeri Semarang, Program Studi Teknik Informatika, dengan IPK 3.90/4.00
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button asChild size="lg" className="rounded-full group relative overflow-hidden">
@@ -104,7 +104,7 @@ export function HeroSection() {
                 </div>
               </motion.div> */}
 
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
@@ -112,7 +112,7 @@ export function HeroSection() {
               >
                 <MousePointer className="h-4 w-4 text-primary" />
                 <p className="text-sm font-medium">UI/UX Designer</p>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
         </div>

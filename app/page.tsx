@@ -8,6 +8,7 @@ import { Header } from "@/components/header"
 import { GridBackground } from "@/components/grid-background"
 import { FloatingElements } from "@/components/floating-elements"
 import Certifications from "@/components/certifications-section"
+import { PhotographySection } from "@/components/photography-section"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
   <section id="about" className="py-10 scroll-mt-[60px]"><AboutSection /></section>
   <section id="skills" className="py-10 scroll-mt-[60px]"><SkillsSection /></section>
   <section id="portfolio" className="py-10 scroll-mt-[60px]"><PortfolioSection /></section>
+  <section id="photography" className="py-10 scroll-mt-[60px]"><PhotographySection /></section>
   <section id="certifications" className="py-10 scroll-mt-[60px]"><Certifications /></section>
   <section id="contact" className="py-20 scroll-mt-[30px]"><ContactSection /></section>
 </main>

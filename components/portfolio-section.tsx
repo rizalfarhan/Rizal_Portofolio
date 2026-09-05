@@ -31,6 +31,15 @@ export function PortfolioSection() {
 
   const projects = [
     {
+      title: "Carakan Loka",
+      category: "Game Developer",
+      image: "/images/carakan.png?height=600&width=800",
+      imagePosition: "50% 50%",
+      description: "Carakan Loka is a 2D educational adventure game that introduces players to Javanese script through exploration, quests, and interactive challenges while promoting the preservation of Javanese cultural heritage.",
+      tags: ["Game", "Education", "Game Developer"],
+      link: "https://drive.google.com/file/d/1QmSL4-cCus_vtygHaTWxkSjVpbLc-Wfy/view?usp=drive_link",
+    },
+    {
       title: "Unlock Us",
       category: "Game Developer",
       image: "/images/unlockus.png?height=600&width=800",

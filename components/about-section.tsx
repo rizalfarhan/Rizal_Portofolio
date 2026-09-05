@@ -54,10 +54,10 @@ export function AboutSection() {
             </h2>
             <div className="space-y-3 text-muted-foreground">
               <p>
-                I am Rizal Farhan Nanda, an Informatics Engineering student at Politeknik Negeri Semarang who has a strong interest in application development and UI/UX design. Through academic projects and self-directed learning, I have gained solid experience in creating responsive and user-centered digital solutions, including mobile apps, interactive websites, and management systems such as attendance tracking.
+                Saya Rizal Farhan Nanda, lulusan Teknik Informatika dari Politeknik Negeri Semarang dengan IPK 3.90/4.00. Saya memiliki minat pada UI/UX Design, Graphic Design, dan pengembangan aplikasi. Selama kuliah, saya mengerjakan berbagai proyek, menjalani pengalaman magang, dan belajar secara mandiri untuk mengembangkan kemampuan dalam merancang tampilan dan membuat solusi digital, mulai dari aplikasi mobile, website, hingga game edukasi.
               </p>
               <p>
-                In addition to technical skills, I actively collaborate in teams to improve communication and problem-solving abilities. I believe that creativity, logic, and teamwork are essential to building meaningful digital products. I am currently looking for an internship opportunity as a UI/UX Designer to apply my skills in creating visually appealing and easy-to-use interfaces.
+                Selain keterampilan teknis, saya aktif bekerja sama dalam tim untuk meningkatkan kemampuan komunikasi dan pemecahan masalah. Saya percaya bahwa kreativitas, logika, dan kerja tim adalah hal yang penting dalam membangun produk digital yang bermakna. Saat ini, saya sedang mencari kesempatan magang sebagai UI/UX Designer untuk menerapkan keterampilan saya dalam menciptakan antarmuka yang menarik dan mudah digunakan.
               </p>
             </div>
 
@@ -68,7 +68,7 @@ export function AboutSection() {
                   <GraduationCap className="w-10 h-10 text-primary" />
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Informatics Engineering Student
+                  Informatics Engineering Graduate
                 </p>
               </div>
               <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
@@ -76,7 +76,7 @@ export function AboutSection() {
                   <Lightbulb className="w-10 h-10 text-primary" />
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Enthusiastic about ui/ux design
+                  Enthusiastic about graphic design
                 </p>
               </div>
               <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
