@@ -61,11 +61,11 @@ export function SkillsSection() {
       description: "Semantic markup, responsive layout, flexbox & grid, styling consistency",
       icon: <Code2 className="h-10 w-10 text-primary" />,
     },
-    {
-      name: "Tailwind CSS",
-      description: "Rapid prototyping, utility-first styling, custom design implementation from Figma",
-      icon: <Wind className="h-10 w-10 text-primary" />,
-    },
+    // {
+    //   name: "Tailwind CSS",
+    //   description: "Rapid prototyping, utility-first styling, custom design implementation from Figma",
+    //   icon: <Wind className="h-10 w-10 text-primary" />,
+    // },
     {
       name: "JavaScript",
       description: "DOM manipulation, event handling, interactive UI components",

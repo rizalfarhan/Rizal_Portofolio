@@ -54,10 +54,10 @@ export function AboutSection() {
             </h2>
             <div className="space-y-3 text-muted-foreground">
               <p>
-                Saya Rizal Farhan Nanda, lulusan Teknik Informatika dari Politeknik Negeri Semarang dengan IPK 3.90/4.00. Saya memiliki minat pada UI/UX Design, Graphic Design, dan pengembangan aplikasi. Selama kuliah, saya mengerjakan berbagai proyek, menjalani pengalaman magang, dan belajar secara mandiri untuk mengembangkan kemampuan dalam merancang tampilan dan membuat solusi digital, mulai dari aplikasi mobile, website, hingga game edukasi.
+                Saya Rizal Farhan Nanda, lulusan D3 Teknik Informatika Politeknik Negeri Semarang dengan IPK 3,90/4,00 dan memiliki fokus pada bidang UI/UX Design. Saya memiliki pengalaman merancang antarmuka aplikasi mobile dan website melalui berbagai proyek akademik serta pengalaman magang, mulai dari menyusun user flow, wireframe, hingga prototype menggunakan Figma.
               </p>
               <p>
-                Selain keterampilan teknis, saya aktif bekerja sama dalam tim untuk meningkatkan kemampuan komunikasi dan pemecahan masalah. Saya percaya bahwa kreativitas, logika, dan kerja tim adalah hal yang penting dalam membangun produk digital yang bermakna. Saat ini, saya sedang mencari kesempatan magang sebagai UI/UX Designer untuk menerapkan keterampilan saya dalam menciptakan antarmuka yang menarik dan mudah digunakan.
+                Dalam proses perancangan, saya terbiasa menerjemahkan kebutuhan pengguna dan sistem menjadi antarmuka yang terstruktur, konsisten, dan mudah digunakan. Pengalaman bekerja bersama developer juga membantu saya memahami proses implementasi desain serta pentingnya komunikasi dan kolaborasi dalam pengembangan produk digital. Saya memiliki minat untuk bekerja sebagai UI/UX Designer dan terus mengembangkan kemampuan dalam menciptakan pengalaman digital yang intuitif dan fungsional.
               </p>
             </div>
 

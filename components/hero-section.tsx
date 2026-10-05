@@ -30,7 +30,7 @@ export function HeroSection() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-5 leading-relaxed">
-              Lulusan Politeknik Negeri Semarang, Program Studi Teknik Informatika, dengan IPK 3.90/4.00
+              Lulusan Politeknik Negeri Semarang, Program Studi Teknik Informatika.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button asChild size="lg" className="rounded-full group relative overflow-hidden">
