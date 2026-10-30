@@ -61,7 +61,7 @@ const photos = [
     objectPosition: "center center",
   },
   {
-    src: "/images/photography/SMT9.png",
+    src: "/images/photography/j8.png",
     className: "left-[720px] top-[350px]",
     width: "w-[200px]",
     height: "h-[267px]",
@@ -96,14 +96,14 @@ const photos = [
     objectPosition: "center 70%",
   },
   {
-    src: "/images/photography/T3.png",
+    src: "/images/photography/sp.png",
     className: "left-[280px] top-[946px]",
     width: "w-[200px]",
     height: "h-[282px]",
     objectPosition: "center 70%",
   },
   {
-    src: "/images/photography/JAMES 6.png",
+    src: "/images/photography/j6.png",
     className: "left-[60px] top-[0px]",
     width: "w-[200px]",
     height: "h-[267px]",
