@@ -5,80 +5,150 @@ import Image from "next/image"
 
 const photos = [
   {
-    src: "/images/photography/1.jpeg",
+    src: "/images/photography/j1.png",
     className: "left-[500px] top-[0px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[267px]",
     objectPosition: "center 70%",
   },
   {
-    src: "/images/photography/2.jpeg",
+    src: "/images/photography/j2.png",
     className: "left-[280px] top-[60px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[267px]",
     objectPosition: "center 70%",
   },
   {
-    src: "/images/photography/3.jpeg",
+    src: "/images/photography/j3.png",
     className: "left-[940px] top-[0px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[267px]",
     objectPosition: "center center",
   },
   {
-    src: "/images/photography/4.jpeg",
+    src: "/images/photography/j4.png",
     className: "left-[720px] top-[60px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[267px]",
     objectPosition: "center center",
   },
   {
-    src: "/images/photography/5.jpeg",
-    className: "left-[60px] top-[270px]",
+    src: "/images/photography/j5.png",
+    className: "left-[60px] top-[290px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[267px]",
     objectPosition: "center center",
   },
   {
-    src: "/images/photography/6.jpeg",
-    className: "left-[500px] top-[270px]",
+    src: "/images/photography/Ultah IKD Vol.3.png",
+    className: "left-[60px] top-[580px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[356px]",
     objectPosition: "center center",
   },
   {
-    src: "/images/photography/7.jpeg",
-    className: "left-[720px] top-[330px]",
+    src: "/images/photography/SMT3.png",
+    className: "left-[60px] top-[959px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[267px]",
+    objectPosition: "center center",
+  },
+  {
+    src: "/images/photography/j7.png",
+    className: "left-[500px] top-[290px]",
+    width: "w-[200px]",
+    height: "h-[267px]",
+    objectPosition: "center center",
+  },
+  {
+    src: "/images/photography/SMT9.png",
+    className: "left-[720px] top-[350px]",
+    width: "w-[200px]",
+    height: "h-[267px]",
     objectPosition: "center 80%",
   },
   {
-    src: "/images/photography/8.jpeg",
-    className: "left-[280px] top-[330px]",
+    src: "/images/photography/POSTER 2.png",
+    className: "left-[720px] top-[640px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[283px]",
     objectPosition: "center 80%",
   },
   {
-    src: "/images/photography/9.jpg",
+    src: "/images/photography/SMT1.png",
+    className: "left-[720px] top-[946px]",
+    width: "w-[200px]",
+    height: "h-[333px]",
+    objectPosition: "center 80%",
+  },
+  {
+    src: "/images/photography/j8.png",
+    className: "left-[280px] top-[350px]",
+    width: "w-[200px]",
+    height: "h-[267px]",
+    objectPosition: "center 70%",
+  },
+  {
+    src: "/images/photography/POSTER 3.jpg",
+    className: "left-[280px] top-[640px]",
+    width: "w-[200px]",
+    height: "h-[283px]",
+    objectPosition: "center 70%",
+  },
+  {
+    src: "/images/photography/T3.png",
+    className: "left-[280px] top-[946px]",
+    width: "w-[200px]",
+    height: "h-[282px]",
+    objectPosition: "center 70%",
+  },
+  {
+    src: "/images/photography/JAMES 6.png",
     className: "left-[60px] top-[0px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[267px]",
     objectPosition: "center 60%",
   },
   {
-    src: "/images/photography/10.jpeg",
-    className: "left-[940px] top-[270px]",
+    src: "/images/photography/sp.png",
+    className: "left-[940px] top-[290px]",
     width: "w-[200px]",
-    height: "h-[250px]",
+    height: "h-[267px]",
     objectPosition: "center 60%",
+  },
+  {
+    src: "/images/photography/Ultah IKD Vol.2.png",
+    className: "left-[940px] top-[580px]",
+    width: "w-[200px]",
+    height: "h-[356px]",
+    objectPosition: "center 60%",
+  },
+  {
+    src: "/images/photography/SMT2.png",
+    className: "left-[940px] top-[959px]",
+    width: "w-[200px]",
+    height: "h-[267px]",
+    objectPosition: "center center",
+  },
+  {
+    src: "/images/photography/Rizal.png",
+    className: "left-[500px] top-[580px]",
+    width: "w-[200px]",
+    height: "h-[267px]",
+    objectPosition: "center center",
+  },
+  {
+    src: "/images/photography/Rizal2.png",
+    className: "left-[500px] top-[870px]",
+    width: "w-[200px]",
+    height: "h-[267px]",
+    objectPosition: "center center",
   },
 ]
 
 export function PhotographySection() {
   return (
-    <section id="photography" className="pt-8 pb-0">
+    <section id="design" className="pt-8 pb-0">
       <div className="container">
 
         {/* Header */}
@@ -88,17 +158,15 @@ export function PhotographySection() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">
-            Photography
+            Design
           </h2>
 
           <p className="text-muted-foreground max-w-xl">
-            A collection of moments I captured through my perspective.
+            A collection of visual ideas and designs crafted with creativity and purpose.
           </p>
         </div>
 
-        {/* ========================= */}
         {/* MOBILE - GRID 2 COLUMNS */}
-        {/* ========================= */}
         <div className="grid grid-cols-2 gap-4 md:hidden">
           {photos.map((photo, index) => (
             <motion.div
@@ -120,12 +188,16 @@ export function PhotographySection() {
                 delay: index * 0.08,
               }}
               whileHover={{
-                scale: 1.03,
+                scale: 1.08,
+                zIndex: 50,
+                transition: {
+                  duration: 0.3,
+                },
               }}
               className="
                 relative
                 w-full
-                aspect-[4/5]
+                aspect-[3/4]
                 overflow-hidden
                 border
                 border-border/50
@@ -150,11 +222,8 @@ export function PhotographySection() {
           ))}
         </div>
 
-        {/* ========================= */}
         {/* DESKTOP - PHOTO COLLAGE */}
-        {/* ========================= */}
-        <div className="relative hidden h-[650px] w-full md:block">
-
+        <div className="relative hidden h-[1260px] w-full md:block">
           {photos.map((photo, index) => (
             <motion.div
               key={photo.src}
@@ -175,8 +244,11 @@ export function PhotographySection() {
                 delay: index * 0.08,
               }}
               whileHover={{
-                scale: 1.05,
+                scale: 1.2,
                 zIndex: 50,
+                transition: {
+                  duration: 0.3,
+                },
               }}
               className={`
                 absolute
@@ -206,7 +278,6 @@ export function PhotographySection() {
               />
             </motion.div>
           ))}
-
         </div>
 
       </div>

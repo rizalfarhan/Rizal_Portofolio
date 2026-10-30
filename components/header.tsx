@@ -41,7 +41,7 @@ export function Header() {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#portfolio" },
-    { name: "Photography", href: "#photography" },
+    { name: "Design", href: "#design" },
     { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
   ]
